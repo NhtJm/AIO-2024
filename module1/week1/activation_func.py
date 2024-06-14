@@ -27,9 +27,10 @@ def elu(x, alpha=0.01):
 
 
 def relu(x):
-    print(f"""relu: f({x})= {max(0,x)}""")
+    print(f"""relu: f({x})= {max(0, x)}""")
     return
- 
+
+
 def activation_func(func, x):
     if not is_number(x):
         print("x must be a number")
@@ -46,7 +47,12 @@ def activation_func(func, x):
         return None
 
 
+def Hello():
+    print("Hello")
+    return
+
+
 # Test the function
 x = input('Input x: ')
-func = input('Input activation function (sigmoid, relu, elu): ') 
-activation_func(func,x)
+func = input('Input activation function (sigmoid, relu, elu): ')
+activation_func(func, x)
