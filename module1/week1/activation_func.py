@@ -47,7 +47,7 @@ def activation_func(func, x):
         return None
 
 
-def Hello():
+def hello():
     print("Hello")
     return
 
